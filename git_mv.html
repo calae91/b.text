@@ -20,7 +20,8 @@
 		
 		<h3>la commande git mv </h3>
     <section class="descriptif">
-        git mv permet de renommer des fichiers (sauvegarde/supprime/créer). On peut aussi renommer un fichier sans avoir à utiliser la commande mv.    
+        git mv permet de renommer des fichiers, un répertoire ou un lien symbolique <br>
+        (sauvegarde/supprime/créer). On peut aussi renommer sans avoir à utiliser la commande mv.    
     </section>
     
     <section class="affichage">
@@ -43,8 +44,8 @@
         
 			<code><h4>- git mv -f </h4></code>
             <section>
-            ATENTION cette commande force le changement de nom d'un dossier et detruit les dossiers existant sous le même nom
-            .</section>
+      ATENTION cette commande force le changement de nom d'un dossier et detruit les dossiers existant sous le même nom.
+            </section>
         <h4>Affichage</h4>
              <div class="code">
             <code> user@lubuntu-13:~/Bureau$ ls<br>
@@ -58,13 +59,18 @@
     
     
         <section class="affichage">
-        <code><h4>- git mv -n </h4></code>
+        <code><h4>- git mv -n "fichier ancien" "fichier nouveau"</h4></code>
             <section>
-            description de la commande
+            la commande permet de montrer les résultats sans faire aucun changement.
             .</section>
         <h4>Affichage</h4>
          <div class="code">
-            <code>codecodecodecodecodecode</code>
+            <code>
+            Checking rename of 't.txt' to 'a.txt'<br>
+            Renaming t.txt to a.txt<br>
+            user@lubuntu-13:~/Bureau$ ls<br>
+            Documents  t.txt<br>
+</code>
             </div>
     <section/>
     
@@ -72,7 +78,7 @@
     
     </div>
     <footer>        
-        <p>G© Groupe d'IN202 2014-2015 UVSQ - Article par Calae91</p>
+        <p>G© Groupe d'IN202 2014-2015 UVSQ - Article par Calae91 et l'aasistance de Chaouki08(git mv)</p>
     </footer>
 
 </body>
